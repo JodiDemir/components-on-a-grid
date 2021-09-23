@@ -16,3 +16,31 @@ header {
   /* Remove the <header> box and allow us to directly apply header’s children to the grid. */
   display: contents;
 }
+
+img {
+  width: 100%;
+}
+
+body {
+  display: grid;
+  margin: 0;
+  padding: 1rem;
+  grid-template-columns: repeat(2, 1fr);
+grid-template-areas:
+"banner banner"
+"col1" "col2";
+gap :1rem;
+}
+
+nav {
+  grid-area: banner;
+  grid-column: 2;
+}
+
+ul {
+  display: flex;
+}
+
+.logo {
+
+}
