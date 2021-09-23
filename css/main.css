@@ -1,15 +1,14 @@
 html {
   box-sizing: border-box;
+  background-color: #f2f1ed;
+  font-family: Georgia, serif;
+  line-height: 1.5;
 }
 
 *,
 *::before,
 *::after {
   box-sizing: inherit;
-}
-
-img {
-  width: 100%;
 }
 
 header {
@@ -26,10 +25,10 @@ body {
   margin: 0;
   padding: 1rem;
   grid-template-columns: repeat(2, 1fr);
-grid-template-areas:
-"banner banner"
-"col1" "col2";
-gap :1rem;
+  grid-template-areas:
+    "banner banner"
+    "col1" "col2";
+  gap: 1rem;
 }
 
 nav {
@@ -37,10 +36,31 @@ nav {
   grid-column: 2;
 }
 
-ul {
-  display: flex;
+.logo {
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+  width: 14rem;
+  grid-column: 1;
+  grid-row: 1;
+  align-self: end;
+  z-index: 1;
 }
 
-.logo {
+main {
+  display: contents;
+}
 
+li {
+  display: inline;
+}
+
+a {
+  color: #fff;
+  font-size: 2rem;
+}
+
+.pano {
+  grid-area: banner;
+  grid-column: 1 / -1;
+  grid-row: 1 / -1;
 }
